@@ -1,0 +1,31 @@
+name: Generate Galaga Contribution Graph
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # Runs every day at midnight UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Galaga Contribution Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: MoAli488
+          theme: galaga
+
+      - name: Deploy to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
