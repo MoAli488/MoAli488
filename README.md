@@ -2,7 +2,7 @@
 
 <h3 align="center"> Computer Science Student | Backend & Full-Stack Developer </h3>
 
-<p align="center"> <a href="https://github.com/MoAli488">GitHub</a> • <a href="https://www.linkedin.com/">LinkedIn</a> </p>
+<p align="center"> <a href="https://github.com/MoAli488">GitHub</a> • <a href="https://www.linkedin.com/in/mohamed-ali-504004327/">LinkedIn</a> </p>
 
 ### 👨‍💻 About Me
 
